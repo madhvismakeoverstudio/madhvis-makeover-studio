@@ -185,28 +185,17 @@
   </div>
 </section>
 
-  <section id="testimonials" class="bg-black py-12" 
-         x-data="{
-           active: 0,
-           testimonials: [
-             { quote: 'Madhvi did my bridal makeup and I couldn’t be happier. She made me feel like a queen!', author: 'Ritu Sharma' },
-             { quote: 'The hair spa was relaxing and luxurious. My hair feels amazing!', author: 'Neha Verma' },
-             { quote: 'Absolutely loved the nail art! Highly professional and hygienic.', author: 'Pooja Mehta' }
-           ],
-           init() {
-             setInterval(() => {
-               this.active = (this.active + 1) % this.testimonials.length;
-             }, 6000);
-           }
-         }">
+  <section id="testimonials" class="bg-black py-12" x-data="{ active: 0, testimonials: [
+  { quote: 'Madhvi did my bridal makeup and I couldn’t be happier. She made me feel like a queen!', author: 'Ritu Sharma' },
+  { quote: 'The hair spa was relaxing and luxurious. My hair feels amazing!', author: 'Neha Verma' },
+  { quote: 'Absolutely loved the nail art! Highly professional and hygienic.', author: 'Pooja Mehta' }
+]}">
   <div class="container mx-auto text-center">
     <h3 class="text-3xl font-semibold text-yellow-400 mb-8 font-serif">What Clients Say</h3>
 
     <!-- Testimonial Display -->
     <template x-for="(testimonial, index) in testimonials" :key="index">
-      <blockquote x-show="active === index"
-                  x-transition
-                  class="italic text-white max-w-2xl mx-auto border border-yellow-500 rounded-lg p-6 bg-black bg-opacity-30">
+      <blockquote x-show="active === index" class="italic text-white max-w-2xl mx-auto border border-yellow-500 rounded-lg p-6 bg-black bg-opacity-30 transition duration-500 ease-in-out">
         <p x-text="testimonial.quote"></p>
         <footer class="mt-4 text-yellow-300 font-semibold" x-text="'– ' + testimonial.author"></footer>
       </blockquote>
