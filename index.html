@@ -1,6 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Fixed Header -->
+<header class="fixed top-0 w-full bg-black z-50 shadow-md">
+  <!-- Top bar: Call + Social Icons -->
+  <div class="flex justify-between items-center px-6 py-2 border-b border-yellow-500 text-sm text-white">
+    <div></div> <!-- Left empty for alignment -->
+    <div class="flex items-center space-x-4">
+      <a href="tel:+919988454364" class="bg-yellow-600 hover:bg-yellow-500 text-black font-semibold px-3 py-1 rounded transition">Call: 9988454364</a>
+      <a href="https://linktr.ee/madhvismakeoverstudio" target="_blank" title="Linktree">
+        <img src="Assets/images/IMG_0310.png" alt="Linktree" class="w-5 h-5 hover:opacity-75">
+      </a>
+      <a href="https://www.facebook.com/share/18vPWkWBbg/" target="_blank" title="Facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="w-5 h-5 hover:opacity-75">
+      </a>
+      <a href="https://www.instagram.com/madhvis_makeover_studio/" target="_blank" title="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="w-5 h-5 hover:opacity-75">
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <nav class="py-3 bg-black text-yellow-400 text-center text-lg font-medium">
+    <ul class="flex justify-center space-x-8">
+      <li><a href="#welcome" class="hover:underline">Home</a></li>
+      <li><a href="#services" class="hover:underline">Services</a></li>
+      <li><a href="#about" class="hover:underline">About</a></li>
+      <li><a href="#testimonials" class="hover:underline">Testimonials</a></li>
+      <li><a href="#contact" class="hover:underline">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Book Appointment Button -->
+  <div class="text-center bg-black py-2 border-t border-yellow-500">
+    <a href="https://forms.gle/mXEqGJJ14kep6AEk8" target="_blank" 
+       class="inline-block bg-yellow-600 hover:bg-yellow-500 text-black font-semibold px-6 py-2 rounded shadow transition">
+      Book Appointment
+    </a>
+  </div>
+</header>
+
+<!-- Spacer to prevent content from hiding behind fixed header -->
+<div class="h-36"></div>
+  
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
