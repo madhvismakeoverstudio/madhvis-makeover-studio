@@ -353,6 +353,22 @@
   </div>
 </section>
 
+<!-- Floating ArtiBot Chat Script -->
+  <script type="text/javascript">
+  !function(t,e){
+    t.artibotApi={l:[],t:[],on:function(){this.l.push(arguments)},trigger:function(){this.t.push(arguments)}};
+    var a=!1,i=e.createElement("script");
+    i.async=!0,i.type="text/javascript",i.src="https://app.artibot.ai/loader.js",
+    e.getElementsByTagName("head")[0].appendChild(i),
+    i.onreadystatechange=i.onload=function(){
+      if(!(a||this.readyState&&"loaded"!=this.readyState&&"complete"!=this.readyState)){
+        new window.ArtiBot({i:"5fd5c37a-8079-439e-a931-50fb6a663593"});
+        a=!0
+      }
+    }
+  }(window,document);
+  </script>
+
   <footer class="bg-yellow-700 text-white text-center py-4">
     &copy; 2025 Madhvi’s Makeover Studio. All rights reserved.
   </footer>
