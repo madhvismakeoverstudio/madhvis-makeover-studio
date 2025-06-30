@@ -41,7 +41,7 @@
   <!-- Hero Section -->
   <main class="pt-24">
     <section id="welcome" class="relative bg-black">
-      <img src="Assets/images/hero-bg.jpg" alt="Salon background" class="w-full h-screen object-cover opacity-50" loading="lazy">
+      <img src="Assets/images/IMG_0336.jpg" alt="Salon background" class="w-full h-screen object-cover opacity-50" loading="lazy">
       <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 lg:px-0">
         <h1 class="mb-4 text-4xl lg:text-6xl font-bold text-white drop-shadow-lg">Elevate Your Look with Professional Beauty Care</h1>
         <p class="mb-8 max-w-2xl text-lg lg:text-xl text-yellow-200">Redefining beauty in Navi Mumbai — bridal makeup, facials, hair spa, styling & more.</p>
